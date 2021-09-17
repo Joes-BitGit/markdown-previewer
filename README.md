@@ -3,6 +3,5 @@
 <img width="424" alt="empty" src="https://user-images.githubusercontent.com/32423851/133718392-ec9b2df8-2b2e-47bc-915a-97b8833928b2.png">
 <img width="450" alt="simple-input" src="https://user-images.githubusercontent.com/32423851/133718395-dd4a277d-c984-417e-9e69-671149675575.png">
 
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
