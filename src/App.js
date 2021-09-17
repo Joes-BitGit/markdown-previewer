@@ -1,12 +1,16 @@
 // continue from user story #4
-import React, { Component } from 'react';
-import marked from 'marked';
+import React, { Component } from "react";
+
+// Marked lets you convert Markdown into HTML.
+// Markdown is a simple text format whose goal is to be very easy to read and write,
+// even when not converted to HTML.
+import marked from "marked";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: placeholder
+      value: placeholder,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -18,24 +22,32 @@ class App extends Component {
 
   render() {
     return (
-      <div id='wrapper'>
+      <div id="wrapper">
         <form>
           <label>
             editor:
-            <textarea name="editor" id="editor" cols="40" rows="20" value={this.state.value} onChange={this.handleChange} />
+            <textarea
+              name="editor"
+              id="editor"
+              cols="40"
+              rows="20"
+              value={this.state.value}
+              onChange={this.handleChange}
+            />
           </label>
         </form>
-        <div dangerouslySetInnerHTML={{ __html: marked(this.state.value) }} id='preview' />
-
+        <div
+          dangerouslySetInnerHTML={{ __html: marked(this.state.value) }}
+          id="preview"
+        />
       </div>
-
     );
   }
 }
 
 // ALLOWS LINE BREAKS WITH RETURN BUTTON
 marked.setOptions({
-  breaks: true
+  breaks: true,
 });
 
 let placeholder = `# Welcome to my React Markdown Previewer!
