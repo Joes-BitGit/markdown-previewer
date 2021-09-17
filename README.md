@@ -5,3 +5,5 @@
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+TODO: Sanitize markdown input [SO](https://stackoverflow.com/questions/57630703/its-safe-to-use-element-innerhtml-to-insert-html-returned-and-escaped-by-the-se)
